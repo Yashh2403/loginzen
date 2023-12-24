@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 10px;
+      margin-top: 10px;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 150px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+    }
+
+    .card .number {
+      margin-bottom: 5px; 
+    }
+
+    .number{
+        color:rgb(142, 229, 12);
+        justify-content: left;
+    }
+
+    .chart-container {
+      flex: 1;
+      height: 300px; 
+      margin: 10px;
+    }
+
+    .chart-row {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+    }
+
+    </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <div class="card">
+      <div class="number">$406411.29</div>
+      <div>Total Revenue</div>
+    </div>
+    <div class="card">
+      <div class="number">$620</div>
+      <div>Total Jobs Avg</div>
+    </div>
+    <div class="card">
+      <div class="number">655</div>
+      <div>Tickets Created</div>
+    </div>
+    <div class="card">
+      <div class="number">735</div>
+      <div>Tickets Scheduled</div>
+    </div>
+    <div class="card">
+      <div class="number">$110448.8</div>
+      <div>Outstanding Amount</div>
+    </div>
+    <div class="card">
+      <div class="number">105</div>
+      <div>Membership Sold</div>
+    </div>
+    <div class="card">
+      <div class="number">436</div>
+      <div>Job Completed</div>
+    </div>
+    <div class="card">
+      <div class="number">65</div>
+      <div>Total Canceled</div>
+    </div>
+  </div>
+    
+  </div>
+  
+  <div class="chart-row">
+    <div class="chart-container" id="container1"></div>
+    <div class="chart-container" id="container2"></div>
+  </div>
+
+  <script src="bar.js"></script>
+</body>
+</html>
